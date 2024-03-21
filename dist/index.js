@@ -11,7 +11,7 @@ const port = 8080; // Change this to your desired port number
 const url = "https://www.cnb.cz/en/financial-markets/foreign-exchange-market/central-bank-exchange-rate-fixing/central-bank-exchange-rate-fixing/daily.txt";
 // CORS configuration
 const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3000" && "https://exchange-rates-psi.vercel.app",
 };
 // Enable CORS middleware
 app.use((0, cors_1.default)(corsOptions));
