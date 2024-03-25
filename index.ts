@@ -10,7 +10,7 @@ const url =
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:3000" && "https://exchange-rates-psi.vercel.app",
+  origin: `${process.env.BASE_URL}`,
 };
 
 // Enable CORS middleware
